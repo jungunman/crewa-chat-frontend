@@ -1,8 +1,36 @@
+/* 글꼴 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
+
+/* Main Components */
+@import url('./routes/css/components/textBox.css');
+@import url('./routes/css/components/register.css');
+@import url('./routes/css/components/modals.css'); 
+
+
+/*Main Elements*/
+@import url('./reset.css');
+@import url('./routes/css/elements/buttons.css');
+@import url('./routes/css/elements/dividingLines.css');
+@import url('./routes/css/elements/alerts.css');
+@import url('./routes/css/elements/margins.css');
+@import url('./routes/css/elements/paddings.css'); 
+
+
+
+:root{
+  --main-font : "Pretendard";
+  --main-color:#06C755; 
+  --main-margin-25px: 25px;
+  --main-padding-25px: 25px;
+  --main-border-radius : 8px;
+  --color-76 : #767676;
+}
+
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family : var(--main-font); 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +38,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* input type 넘버만 치게 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* 파이어폭스에서의 초기화 방법 */
+input[type=number] {
+    -moz-appearance: textfield;
 }
