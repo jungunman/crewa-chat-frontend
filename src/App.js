@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './App.css';
 import StartScreen from './routes/StartScreen.js';
 import Authentication from './routes/Authentication.js';
