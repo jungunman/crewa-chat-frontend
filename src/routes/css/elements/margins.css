@@ -30,8 +30,26 @@
   margin-bottom: 10px;
 }
 
+.mg-bt-20{
+  margin-bottom: 20px;
+}
 .mg-bt-30{
   margin-bottom: 30px;
+}
+.mg-bt-40{
+  margin-bottom: 40px;
+}
+.mg-bt-50{
+  margin-bottom: 50px;
+}
+.mg-bt-60{
+  margin-bottom: 60px;
+}
+.mg-bt-70{
+  margin-bottom: 70px;
+}
+.mg-bt-80{
+  margin-bottom: 80px;
 }
 
 /* right */
@@ -51,6 +69,16 @@
 .mg-rg-50{
   margin-right: 50px;
 }
+.mg-rg-60{
+  margin-right: 60px;
+}
+.mg-rg-70{
+  margin-right: 70px;
+}
+.mg-rg-80{
+  margin-right: 80px;
+}
+
 
 /* left */
 .mg-lf-10{
@@ -68,5 +96,15 @@
 .mg-lf-50{
   margin-left: 50px;
 }
+.mg-lf-60{
+  margin-left: 60px;
+}
+.mg-lf-70{
+  margin-left: 70px;
+}
+.mg-lf-80{
+  margin-left: 80px;
+}
+
 
 /* everything */

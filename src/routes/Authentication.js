@@ -45,7 +45,7 @@ function Authentication(props){
                     <form className='authentication__form mg-t-20'>
                         <div className='authentication__row'>
                             <div className='authentication__column'>대한민국(Republic of korea)</div>
-                            <div className='authentication__column'><img src={arrowRight} alt='오른쪽 화살표'/></div>
+                            <div className='authentication__column'><img src={`/images/buttons/arrow-right.png`} alt='오른쪽 화살표'/></div>
                         </div>
                         <div className='authentication__row'>
                             <div className='authentication__column'>+82 <span className='text-gray-verticalLine' ></span></div>

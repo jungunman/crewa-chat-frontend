@@ -128,3 +128,29 @@ Authentication 페이지에서 11자리를 입력받고
 3. css 변경
 - modal.css elements => Component로 이동
 - modal 요소 추가
+
+
+## 2023-04-26 - home 화면 profile 처리중 public 폴더로 img폴더 옮김
+
+1. 커밋한 파일
+- public\images\arrows\arrow-right.png
+- public\images\basic_profile_imgs\basic-profile-1.png
+- public\images\icons\magnifier.png
+- public\images\logo\LINE_logo1.png
+- src\images\buttons\arrow-right.png
+- src\images\logo\LINE_logo1.png
+- src\index.css
+- src\routes\Authentication.js
+- src\routes\css\components\mainScreen.css
+- src\routes\css\elements\margins.css
+- src\routes\css\elements\paddings.css
+- src\routes\css\Home.css
+- src\routes\Home.js
+- src\store\userSlice.js
+
+2. public 폴더로 옮긴 후 error 발생 해결중
+
+3. (store)userSlice.js 변경점
+상태메세지와 프로필 사진 경로, 배경 사진 경로 추가했습니다
+
+4. Home 화면 profile 컴포넌트 css 적용 X

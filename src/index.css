@@ -2,6 +2,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
 
 /* Main Components */
+@import url('./routes/css/components/mainScreen.css'); 
 @import url('./routes/css/components/textBox.css');
 @import url('./routes/css/components/register.css');
 @import url('./routes/css/components/modals.css'); 
@@ -22,6 +23,8 @@
   --main-color:#06C755; 
   --main-margin-25px: 25px;
   --main-padding-25px: 25px;
+  --main-margin-35px: 35px;
+  --main-padding-35px: 35px;
   --main-border-radius : 8px;
   --color-76 : #767676;
 }
