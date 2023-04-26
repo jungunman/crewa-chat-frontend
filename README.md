@@ -7,6 +7,9 @@
 - Verification <회원가입 - 인증번호 입력 페이지>
 - SetNickName <회원가입 - 닉네임 설정 페이지>
 
+## 메인화면 파일들(js file)
+- home <메인화면 - Profile 및 Friends List 페이지 출력>
+
 
 # Front
 ## 2023-04-16 react CRA PWA 프로젝트로 변경 (정운만)
@@ -54,11 +57,6 @@
 - Authentication.js, Verification.js ajax 도입
 - ChatList 화면 구성
 
-## Completed Front (완료 일자)
-- AuthenticationModal.js (2023-04-18)
-- 분기 지어서 화면 뿌리기 (2023-04-18)
-- css 분리하고, 동적 화면 만들기 (2023-04-18)
-- 회원가입 및 로그인 인증 화면 (2023-04-18)
 
 ## 2023-04-20 Clean Code 적용 및 CSS transition 추가
 
@@ -154,3 +152,11 @@ Authentication 페이지에서 11자리를 입력받고
 상태메세지와 프로필 사진 경로, 배경 사진 경로 추가했습니다
 
 4. Home 화면 profile 컴포넌트 css 적용 X
+
+
+## Completed Front (완료 일자)
+- AuthenticationModal.js (2023-04-18)
+- 분기 지어서 화면 뿌리기 (2023-04-18)
+- css 분리하고, 동적 화면 만들기 (2023-04-18)
+- 회원가입 및 로그인 인증 화면 (2023-04-18)
+- setNickName 화면 (2023-04-22)
