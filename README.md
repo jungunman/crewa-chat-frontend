@@ -160,3 +160,43 @@ Authentication 페이지에서 11자리를 입력받고
 - css 분리하고, 동적 화면 만들기 (2023-04-18)
 - 회원가입 및 로그인 인증 화면 (2023-04-18)
 - setNickName 화면 (2023-04-22)
+
+
+
+
+## 2023-04-28 - home 화면 footer 작업 1단계
+1. 커밋한 파일들
+- src\store\userSlice.js
+- src\store\footerSlice.js
+- src\store.js
+- src\routes\StartScreen.js
+- src\routes\Home.js
+- src\routes\Footer.js
+- src\routes\css\components\profiles.css
+- src\routes\css\components\footers.css
+- src\routes\Chats.js
+- src\routes\Authentication.js
+- src\images\logo\LINE_logo1.png
+- src\images\icons\setting.png
+- src\images\icons\setting-selected.png
+- src\images\icons\magnifier.png
+- src\images\icons\home.png
+- src\images\icons\home-selected.png
+- src\images\icons\chat.png
+- src\images\icons\chat-selected.png
+- src\images\basic_profile_imgs\basic-profile-1.png
+- src\images\arrows\arrow-right.png
+- src\App.js
+- public\images\logo\LINE_logo1.png
+- public\images\icons\magnifier.png
+- public\images\basic_profile_imgs\basic-profile-1.png
+- public\images\arrows\arrow-right.png
+
+2. public/images 폴더 다시 src로 옮김
+
+
+# 앞으로 해야할 것들
+
+1. Profile Image 업로드 url 해결하기 (지금은 하드코딩 되어 있음 안그러면 에러뜸)
+2. Footer Home , Chat, Setting 알림 표시 하기
+3. Profile Component 완성

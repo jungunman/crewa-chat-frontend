@@ -1,0 +1,83 @@
+.footer__home{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    background-color: #F7F7FB;
+    padding: 0px var(--main-padding-25px);
+    box-sizing: border-box;
+    z-index: 5;
+}
+.footer__nav{
+    width: 100%;
+}
+
+.footer__ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+}
+.footer__li img{
+    object-fit: cover;
+}
+
+.footer__li p{
+    font-size: 14px;
+}
+
+
+
+
+/* 아이콘들 */
+
+.footer__icon-home {
+    height: 21px;
+    width: 20px;
+    background-image: url("./../../../images/icons/home.png");
+    background-repeat: no-repeat;
+}
+
+.footer__icon-chat {
+    height: 21px;
+    width: 21px;
+    background-image: url("./../../../images/icons/chat.png");
+    background-repeat: no-repeat;
+}
+.footer__icon-setting {
+    height: 22px;
+    width: 20px;
+    background-image: url("./../../../images/icons/setting.png");
+    background-repeat: no-repeat;
+}
+
+.footer__icon-home__selected {
+    height: 21px;
+    width: 20px;
+    background-image: url("./../../../images/icons/home-selected.png");
+    background-repeat: no-repeat;
+}
+.footer__icon-chat__selected {
+    height: 21px;
+    width: 20px;
+    background-image: url("./../../../images/icons/chat-selected.png");
+    background-repeat: no-repeat;
+}
+.footer__icon-setting__selected {
+    height: 21px;
+    width: 20px;
+    background-image: url("./../../../images/icons/setting-selected.png");
+    background-repeat: no-repeat;
+}
+
+

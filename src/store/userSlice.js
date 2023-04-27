@@ -5,7 +5,7 @@ const userInfo = createSlice({
     initialState : {nickName : "",
                     phoneNumber : "",
                     statusMsg : "",
-                    profileImgUrl:"./../images/basic_profile_imgs/basic-profile-1.png",
+                    profileImgUrl: "images/basic_profile_imgs/basic-profile-1.png",
                     backgroundImgUrl :""},
     reducers : {
         setUserNickName(status,action){
