@@ -1,4 +1,4 @@
-.header__home {
+.header {
     position: fixed;
     width: 100%;
     display: flex;
@@ -27,16 +27,16 @@
 }
 
 
-.header__home .header__title{
+.header .header__title{
     font-weight: 700;
     font-size: 17px;
 }
 
-.header__home .header__icons{
+.header .header__icons{
     display: flex;
     align-items: flex-end;
 }
 
-.header__home .header__icon{
+.header .header__icon{
     padding-right: 25px;
 }

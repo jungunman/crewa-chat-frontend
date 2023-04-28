@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import footers from './css/components/footers.css';
+import footers from './../css/components/footers.css';
 import { useNavigate } from 'react-router-dom';
 
 

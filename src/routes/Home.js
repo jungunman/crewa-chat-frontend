@@ -1,4 +1,5 @@
-import Footer from "./Footer.js";
+import Footer from "./routes-components/Footer.js";
+import Header from "./routes-components/Header.js";
 import home from "./css/Home.css";
 import profiles from "./css/components/profiles.css";
 import profileImg from "./../images/basic_profile_imgs/basic-profile-1.png";
@@ -15,18 +16,7 @@ function Home(props){
 
     return (
         <>
-            <header className="header__home">
-                <div className="header__column">
-                    <img  className="header__icon"/>
-                </div>
-                <div className="header__column">
-                    <h3 className="header__title">Friend List</h3>
-                </div>
-                <div className="header__column">
-                    <img className="header__icon" src={require("./../images/icons/magnifier.png")} alt="검색하기"/>
-                </div>
-            </header>
-
+            <Header />
             <div className="main-screen pd-t-70 pd-bt-80">
                 <main className="main__home">
                     <Profile profileImgUrl={profileImgUrl} nickName={nickName} statusMsg={statusMsg}/>

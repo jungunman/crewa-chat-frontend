@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+import Footer from "./routes-components/Footer.js";
 import { onClickChat } from "../store/footerSlice";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
