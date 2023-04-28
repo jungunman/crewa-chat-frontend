@@ -15,16 +15,19 @@ function Home(props){
 
     return (
         <>
-            <div className="main-screen">
-                <header className="header__home pd-t-70 mg-bt-30">
-                    <h3 className="header__title">친구</h3>
-                    <div className="header__icons">
-                        <img className="header__icon" src={require("./../images/icons/magnifier.png")} alt="검색하기"/>
-                    </div>
-                </header>
+            <header className="header__home">
+                <div className="header__column">
+                    <img  className="header__icon"/>
+                </div>
+                <div className="header__column">
+                    <h3 className="header__title">Friend List</h3>
+                </div>
+                <div className="header__column">
+                    <img className="header__icon" src={require("./../images/icons/magnifier.png")} alt="검색하기"/>
+                </div>
+            </header>
 
-
-
+            <div className="main-screen pd-t-70 pd-bt-80">
                 <main className="main__home">
                     <Profile profileImgUrl={profileImgUrl} nickName={nickName} statusMsg={statusMsg}/>
                 </main>
