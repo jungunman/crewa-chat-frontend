@@ -195,8 +195,29 @@ Authentication 페이지에서 11자리를 입력받고
 2. public/images 폴더 다시 src로 옮김
 
 
+## 2023-04-29 - home 화면 Profile Component Updating!
+1. 커밋한 파일
+- src\index.css
+- src\routes\Authentication.js
+- src\routes\Chats.js
+- src\routes\css\components\headers.css
+- src\routes\css\components\mainScreen.css
+- src\routes\css\components\profiles.css
+- src\routes\css\elements\icons.css
+- src\routes\css\elements\paddings.css
+- src\routes\Home.js
+- src\routes\routes-components\Header.js
+- src\store.js
+- src\store\headerSlice.js
+
+2. Profile => 종류 : 내꺼, 친구들꺼, 채팅 프로필! 해결하기
+
+3. Header Store로 화면 분기별 한 파일로 해결 가능하게 수정.
+
 # 앞으로 해야할 것들
 
 1. Profile Image 업로드 url 해결하기 (지금은 하드코딩 되어 있음 안그러면 에러뜸)
 2. Footer Home , Chat, Setting 알림 표시 하기
 3. Profile Component 완성
+
+

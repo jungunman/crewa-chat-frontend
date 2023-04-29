@@ -1,18 +1,20 @@
+import { useSelector } from 'react-redux';
 import header from './../css/components/headers.css';
 
 
 function Header(props){
+    const {headerTitle,leftIconClassName,rightIconClassName} = useSelector((status) => status.headerSelectionStatus);
     return(
         <>
         <header className="header">
                 <div className="header__column">
-                    <img  className="header__icon"/>
+                    <div className={leftIconClassName}/>
                 </div>
                 <div className="header__column">
-                    <h3 className="header__title">Friend List</h3>
+                    <h3 className="header__title">{headerTitle}</h3>
                 </div>
                 <div className="header__column">
-                    <img className="header__icon" src={require("./../../images/icons/magnifier.png")} alt="검색하기"/>
+                    <div className={rightIconClassName}/>
                 </div>
         </header>
         </>
