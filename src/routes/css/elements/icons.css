@@ -1,0 +1,14 @@
+.magnifier{
+    height: 20px;
+    width: 16px;
+    padding-right: 25px;
+    background-image: url("./../../../images/icons/magnifier.png");
+    background-repeat: no-repeat;
+}
+
+.arrow-right{
+    height: 16px;
+    width: 10px;
+    background-image: url("./../../../images/arrows/arrow-right.png");
+    background-repeat: no-repeat;
+}
