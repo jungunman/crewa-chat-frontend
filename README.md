@@ -195,8 +195,12 @@ Authentication 페이지에서 11자리를 입력받고
 2. public/images 폴더 다시 src로 옮김
 
 
+## 2023-05-15
+
+
 # 앞으로 해야할 것들
 
 1. Profile Image 업로드 url 해결하기 (지금은 하드코딩 되어 있음 안그러면 에러뜸)
 2. Footer Home , Chat, Setting 알림 표시 하기
 3. Profile Component 완성
+
