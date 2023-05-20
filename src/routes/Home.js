@@ -35,7 +35,7 @@ function MyProfile(props){
             <img src={profileImg} alt="프로필 사진" />
             <div className="profile__info__Mine">
                 <span className="profile__nickName__Mine">{props.nickName}</span>
-                <p className="profile__statusMsg__Mine">상태zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz21312312312zzzz</p>
+                <p className="profile__statusMsg__Mine">상태zzzzzzzzzzz213123asdfasdfasdfsadfasdf12312zzzz</p>
             </div>
         </div>
         </>

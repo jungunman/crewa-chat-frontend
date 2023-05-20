@@ -3,7 +3,7 @@ import authenticationTimer from './store/timeSlice.js'
 import userInfo from './store/userSlice.js'
 import footerSelectionStatus from './store/footerSlice.js';
 import headerSelectionStatus from './store/headerSlice.js';
-
+import socketStatus from './store/socketSlice.js';
 
 
 
@@ -12,6 +12,7 @@ export default configureStore({
     authenticationTimer : authenticationTimer.reducer,
     userInfo: userInfo.reducer,
     footerSelectionStatus : footerSelectionStatus.reducer,
-    headerSelectionStatus : headerSelectionStatus.reducer
+    headerSelectionStatus : headerSelectionStatus.reducer,
+    socketStatus : socketStatus.reducer
    }
 }) 
