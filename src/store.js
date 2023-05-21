@@ -4,6 +4,7 @@ import userInfo from './store/userSlice.js'
 import footerSelectionStatus from './store/footerSlice.js';
 import headerSelectionStatus from './store/headerSlice.js';
 import socketStatus from './store/socketSlice.js';
+import crewaAI from './store/crewaAISlice.js';
 
 
 
@@ -13,6 +14,7 @@ export default configureStore({
     userInfo: userInfo.reducer,
     footerSelectionStatus : footerSelectionStatus.reducer,
     headerSelectionStatus : headerSelectionStatus.reducer,
-    socketStatus : socketStatus.reducer
+    socketStatus : socketStatus.reducer,
+    crewaAI : crewaAI.reducer
    }
 }) 

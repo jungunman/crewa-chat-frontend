@@ -214,10 +214,23 @@ Authentication 페이지에서 11자리를 입력받고
 
 3. Header Store로 화면 분기별 한 파일로 해결 가능하게 수정.
 
-# 앞으로 해야할 것들
 
+## 2023-05-21 - home 화면 정적코딩까지 완성, 데이터 있을 때 동적으로 움직이게 해야함.
+1. 커밋한 파일
+- src\store\crewaAISlice.js
+- src\store.js
+- src\routes\Home.js
+- src\routes\css\Home.css
+- src\routes\css\components\profiles.css
+- src\index.css
+- src\images\arrows\roll-up.png
+- src\images\arrows\roll-down.png
+
+2. 즐겨찾기 슬라이드 애니메이션 추가하기.
+3. 프로필 클릭 시 프로필 수정 Modal창이나, 프로필 수정 화면으로 전환
+4. 임의 데이터 값 저장해서 실험하기.
+
+# 앞으로 해야할 것들
 1. Profile Image 업로드 url 해결하기 (지금은 하드코딩 되어 있음 안그러면 에러뜸)
 2. Footer Home , Chat, Setting 알림 표시 하기
 3. Profile Component 완성
-
-
