@@ -13,15 +13,12 @@ function Footer(props){
                     <ul className='footer__ul'>
                         <li className='footer__li' onClick={()=>{navigator("/Home")}}>
                             <div className={home} alt="홈"></div>
-                            <p className="footer__icon-name">Home</p>
                         </li>
                         <li className='footer__li' onClick={()=>{navigator("/Chats")}}>
                             <div className={chat} alt="채팅"></div>
-                            <p className="footer__icon-name">Chats</p>
                         </li>
                         <li className='footer__li'>
                            <div className={setting} alt="채팅"></div>
-                            <p className="footer__icon-name">Settings</p>
                         </li>
                     </ul>
                 </nav>

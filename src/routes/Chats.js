@@ -8,6 +8,7 @@ import Header from "./routes-components/Header.js";
 function Chats(props){
     const dispatch = useDispatch();
     useEffect(()=>{
+        // 헤더와 푸터 바꾸기.
         dispatch(setChatHeaderTitle());
         dispatch(onClickChat());
     },[]);

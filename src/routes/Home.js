@@ -2,6 +2,7 @@ import Footer from "./routes-components/Footer.js";
 import Header from "./routes-components/Header.js";
 import home from "./css/Home.css";
 import profiles from "./css/components/profiles.css";
+import crewaAI from "./../images/logo/CrewaAI.png";
 import rollUp from "./../images/arrows/roll-up.png";
 import rollDown from "./../images/arrows/roll-down.png";
 import profileImg from "./../images/basic_profile_imgs/basic-profile-1.png";
@@ -12,8 +13,8 @@ import { useEffect, useState } from "react";
 function Home(props){
     const dispatch = useDispatch();
     const [isOpenBookMark,setIsOpenBookMark] = useState(true);
-    const [isThereFriendsInBookMark,setIsThereFriendsInBookMark] = useState(false);
     useEffect(()=>{
+        // 헤더와 푸터 바꾸기
         dispatch(setHomeHeaderTitle());
         dispatch(onClickHome());
     },[]);
@@ -21,7 +22,7 @@ function Home(props){
     return (
         <>
             <Header />
-            <main className="main-screen pd-t-50 pd-bt-80">
+            <main className="main-screen pd-t-50 pd-bt-50">
                 <MyProfile dispatch={dispatch}/>
                 <h2 className="crewaAI__title">Crewa AI</h2>
                 <CrewaAIProfile />
@@ -32,7 +33,7 @@ function Home(props){
                     {!isOpenBookMark && <img className="roll" src={rollUp} onClick={()=>{setIsOpenBookMark(!isOpenBookMark)}} alt="오른쪽화살표"/>}
                 </div>
                 <div className="friends-bookmark__list">
-                    {isOpenBookMark&&!isThereFriendsInBookMark && <p className="friends-bookmark__alert">즐겨찾기한 친구가 없습니다. <br/>소중한 친구를 즐겨찾기 해보세요!</p>}
+                    
                 </div>
 
                 <div className="subTitle">
@@ -67,7 +68,7 @@ function CrewaAIProfile(props){
     const {crewaAIName, crewaAIStatusMsg} = useSelector((state)=>state.crewaAI);
     return(<>
         <div className="profile__CrewaAI">
-            <img src={profileImg} alt="CrewaAI Image" />
+            <img src={crewaAI} alt="CrewaAI Image" />
             <div className="profile__info__CrewaAI">
                 <span className="profile__nickName__CrewaAI">{crewaAIName}</span>
                 <p className="profile__statusMsg__CrewaAI">{crewaAIStatusMsg}</p>

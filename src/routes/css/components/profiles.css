@@ -4,29 +4,29 @@
     height: 80px;
     display: flex;
     align-items: center;
-    padding : 10px 16px;
+    padding : 10px 15px;
     overflow: hidden;
     border-bottom: 1px solid var(--color-f0f6);
 }
 
 
 .profile__Mine img{
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
     border-radius: 30px;
     box-sizing: border-box;
 }
 
 .profile__info__Mine{
     box-sizing: border-box;
-    padding : 0px 0px 0px 16px;
+    padding : 0px 0px 0px 15px;
     width: 100%;
     height: auto;
     overflow: hidden;
 }
 
 .profile__nickName__Mine{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     color: #000;
     text-overflow: ellipsis;
@@ -40,7 +40,7 @@
     height: 18px;
     text-align: left;
     margin-top: 2px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     color: var(--color-777);
   }
@@ -55,6 +55,7 @@
     border-radius: 15px;
     padding: 0px 15px;
     box-sizing: border-box;
+    margin-bottom: 5px;
   }
 
   .profile__CrewaAI img {
@@ -62,6 +63,7 @@
     width: 41px;
     height: 41px;
     border-radius: 11px;
+    object-fit: cover;
   }
   .profile__nickName__CrewaAI{
     font-size: 13px;
@@ -88,7 +90,7 @@
     height: 58px;
     display: flex;
     align-items: center;
-    padding: 8px 16px;
+    padding: 10px 15px;
     box-sizing: border-box;
   }
 
@@ -96,7 +98,7 @@
     width: 42px;
     height: 42px;
     border-radius: 21px;
-    margin-right: 16px;
+    margin-right: 18px;
   }
 
   .profile__info__friend{
