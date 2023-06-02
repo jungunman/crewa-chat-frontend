@@ -35,6 +35,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.verifictions__numbers input{
+    background-color: inherit;
+}
 
 .verifictions__number{
     text-align: center;

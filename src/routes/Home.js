@@ -10,13 +10,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { onClickHome } from "../store/footerSlice.js";
 import { setHomeHeaderTitle } from "../store/headerSlice.js"
 import { useEffect, useState } from "react";
+import { fetchFriendsList } from "../store/friendsSlice.js";
 function Home(props){
     const dispatch = useDispatch();
     const [isOpenBookMark,setIsOpenBookMark] = useState(true);
+    const {favorite_friends,friends,loading} = useSelector((status)=>status.friendsList);
     useEffect(()=>{
         // 헤더와 푸터 바꾸기
         dispatch(setHomeHeaderTitle());
         dispatch(onClickHome());
+        dispatch(fetchFriendsList());
     },[]);
 
     return (
@@ -33,14 +36,22 @@ function Home(props){
                     {!isOpenBookMark && <img className="roll" src={rollUp} onClick={()=>{setIsOpenBookMark(!isOpenBookMark)}} alt="오른쪽화살표"/>}
                 </div>
                 <div className="friends-bookmark__list">
-                    
+                    {isOpenBookMark && favorite_friends && favorite_friends.map((element,i)=>{
+                        return(<>
+                            <FriendProfile name={element.name} profileImgUrl={element.profileImgUrl} backgroundImgUrl={element.backgroundImgUrl} stateMessage={element.stateMessage}/>
+                        </>)
+                    })}
                 </div>
 
                 <div className="subTitle">
                     <h2 className="subTitle__title">친구</h2>
                 </div>
                 <div className="friends__list">
-                    <FriendProfile />
+                    {friends && friends.map((element,i)=>{
+                        return(<>
+                            <FriendProfile name={element.name} profileImgUrl={element.profileImgUrl} backgroundImgUrl={element.backgroundImgUrl} stateMessage={element.stateMessage}/>
+                        </>)
+                    })}
                 </div>
             </main>
             <Footer/>
@@ -78,12 +89,20 @@ function CrewaAIProfile(props){
 }
 
 function FriendProfile(props){
+    const [isThereStatusMsg,setIsThereStatusMsg] = useState(false);
+    useEffect(()=>{
+        if(props.stateMessage==""){
+            setIsThereStatusMsg(false);
+        }else{
+            setIsThereStatusMsg(true);
+        }
+    },[])
     return(<>
         <div className="profile__friend">
             <img src={profileImg} alt="친구이미지"/>
             <div className="profile__info__friend">
-                <span className="profile__nickName__friend">Friend Name</span>
-                <p className="profile__statusMsg__friend">친구 상태메세지친구 상태메세지친구 상태메세지친구 상태메세지친구 상태메세지친구 상태메세지친구 상태메세지</p>
+                <span className="profile__nickName__friend">{props.name}</span>
+                {isThereStatusMsg && <p className="profile__statusMsg__friend">{props.stateMessage}</p>}
             </div>
         </div>
     </>)

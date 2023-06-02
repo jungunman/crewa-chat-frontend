@@ -5,7 +5,7 @@ import footerSelectionStatus from './store/footerSlice.js';
 import headerSelectionStatus from './store/headerSlice.js';
 import socketStatus from './store/socketSlice.js';
 import crewaAI from './store/crewaAISlice.js';
-
+import friendsList from './store/friendsSlice.js';
 
 
 export default configureStore({
@@ -15,6 +15,7 @@ export default configureStore({
     footerSelectionStatus : footerSelectionStatus.reducer,
     headerSelectionStatus : headerSelectionStatus.reducer,
     socketStatus : socketStatus.reducer,
-    crewaAI : crewaAI.reducer
+    crewaAI : crewaAI.reducer,
+    friendsList : friendsList.reducer
    }
 }) 

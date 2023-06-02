@@ -17,6 +17,7 @@
     font-size: 16px;
     border:none;
     outline: none;
+    background-color: inherit;
 }
 
 .setNickName__input:focus-within{

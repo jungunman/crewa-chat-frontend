@@ -1,0 +1,62 @@
+{
+    "data": {
+        "favorite_friends": [
+            {
+                "userId": {
+                    "userId": "0c629ce6-8114-427d-8050-bf81686ef137"
+                },
+                "name": "이재승",
+                "profileImgUrl": "default_profile_img.jpg",
+                "backgroundImgUrl": "default_background_img.jpg",
+                "stateMessage": "나는야 인프라 관리자"
+            }
+        ],
+        "friends": [
+            {
+                "userId": {
+                    "userId": "9ffee66c-ffc4-427a-a49b-987cf6191a47"
+                },
+                "name": "강동준",
+                "profileImgUrl": "default_profile_img.jpg",
+                "backgroundImgUrl": "default_background_img.jpg",
+                "stateMessage": "나는야 백엔드 개발자"
+            },
+            {
+                "userId": {
+                    "userId": "a9d9848a-4e98-4421-9fca-0c44f24ad33d"
+                },
+                "name": "류승표",
+                "profileImgUrl": "default_profile_img.jpg",
+                "backgroundImgUrl": "default_background_img.jpg",
+                "stateMessage": "나는야 백엔드 개발자"
+            },
+            {
+                "userId": {
+                    "userId": "ab621369-fbcc-4253-935c-6b9078cd8a81"
+                },
+                "name": "장미진",
+                "profileImgUrl": "default_profile_img.jpg",
+                "backgroundImgUrl": "default_background_img.jpg",
+                "stateMessage": "나는야 크루와 팀짱"
+            },
+            {
+                "userId": {
+                    "userId": "b413cdc6-aeb4-4621-89a4-508920b5993c"
+                },
+                "name": "박진선",
+                "profileImgUrl": "default_profile_img.jpg",
+                "backgroundImgUrl": "default_background_img.jpg",
+                "stateMessage": "나는야 브랜드 및 UX/UI 디자이너 "
+            },
+            {
+                "userId": {
+                    "userId": "b413cdc6-aeb4-4621-89a4-508920b5993c"
+                },
+                "name": "정운만",
+                "profileImgUrl": "default_profile_img.jpg",
+                "backgroundImgUrl": "default_background_img.jpg",
+                "stateMessage": "왜 나는 데이터 더미에 안넣어줬냐 동준아 ㅠㅠ 세상 서운해서 술로 날을 지샜다 나 A형이다 감안해둬! "
+            }
+        ]
+    }
+}

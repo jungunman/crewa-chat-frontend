@@ -24,4 +24,11 @@ function Chats(props){
     )
 }
 
+
+function ChatRoom(){
+    return (<>
+        <div>  </div>
+    </>)
+}
+
 export default Chats;

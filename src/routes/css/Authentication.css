@@ -50,7 +50,9 @@
 .authentication__row:last-child .authentication__column:last-child{
     width: 95%;
 }
-
+.authentication__column input{
+    background-color: inherit;
+}
 .authentication__column:first-child{
     display: flex;
     align-items: center;
