@@ -1,3 +1,5 @@
+/* Icon의 크기 혹은 고정 url 등을 넣어두는 곳입니다. */
+
 .magnifier{
     height: 20px;
     width: 16px;
@@ -11,4 +13,15 @@
     width: 10px;
     background-image: url("./../../../images/arrows/arrow-right.png");
     background-repeat: no-repeat;
+}
+
+.icons__camera-xs{
+    width: 20.28px;
+    height: 16.23px;
+}
+.icons__pen{
+    position: absolute;
+    right: 0;
+    width: 11.83px;
+    height: 11.83px;
 }

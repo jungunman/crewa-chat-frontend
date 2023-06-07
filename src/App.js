@@ -7,6 +7,7 @@ import Home from './routes/Home.js';
 import Chats from './routes/Chats.js';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import ChattingRoom from './routes/ChattingRoom.js';
+import ProfileDetail from './routes/ProfileDetail';
 
 function App() {
   const navigator = useNavigate();
@@ -20,7 +21,8 @@ function App() {
         <Route path='/SetNickName' element={ <SetNickName navigator={navigator}/> }/>
         <Route path='/Home' element={ <Home navigator={navigator}/> }/>
         <Route path='/Chats' element={ <Chats navigator={navigator}/> }/>
-        <Route path='/ChattingRoom' element={ <ChattingRoom navigator={navigator}/> }/>        
+        <Route path='/ChattingRoom' element={ <ChattingRoom navigator={navigator}/> }/> 
+        <Route path="/ProfileDetail/:userId" element={ <ProfileDetail navigator={navigator} /> }/>        
       </Routes>
     </div>
   );

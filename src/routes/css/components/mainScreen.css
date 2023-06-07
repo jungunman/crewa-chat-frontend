@@ -1,6 +1,7 @@
+/* main-screen 관련 입니다. padding값을 넣어줬으나 padding.css로 분할해서 사용하고 있습니다. 
+mainPadding 값은 20px입니다. */
 .main-screen{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 0px 20px;
 }

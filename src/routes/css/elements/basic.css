@@ -1,0 +1,8 @@
+/* 기본 이미지 css 파일입니다. */
+.basic-bg-img {
+    background-image: url("./../../../images/basic_bg_imgs/basic_background_1.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    box-sizing: border-box;
+    background-size: cover;
+}

@@ -1,7 +1,14 @@
-
+/* 구분선을 만드는 곳입니다. */
 .text-gray-verticalLine{
     margin : 0px 10px;
     width : 1px;
     height: 20px;
     border-left : 1px solid #DCDCE7;
   }
+
+.profile-detail__division-line{
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  height: 1px;
+  margin: 10px 0px;
+}

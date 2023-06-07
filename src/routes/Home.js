@@ -11,6 +11,7 @@ import { onClickHome } from "../store/footerSlice.js";
 import { setHomeHeaderTitle } from "../store/headerSlice.js"
 import { useEffect, useState } from "react";
 import { fetchFriendsList } from "../store/friendsSlice.js";
+import { Link } from "react-router-dom";
 function Home(props){
     const dispatch = useDispatch();
     const [isOpenBookMark,setIsOpenBookMark] = useState(true);
@@ -25,7 +26,7 @@ function Home(props){
     return (
         <>
             <Header />
-            <main className="main-screen pd-t-50 pd-bt-50">
+            <main className="main-screen pd-rg-20 pd-lf-20 pd-t-50 pd-bt-50">
                 <MyProfile dispatch={dispatch}/>
                 <h2 className="crewaAI__title">Crewa AI</h2>
                 <CrewaAIProfile />
@@ -38,7 +39,9 @@ function Home(props){
                 <div className="friends-bookmark__list">
                     {isOpenBookMark && favorite_friends && favorite_friends.map((element,i)=>{
                         return(<>
+                        <Link to={`/ProfileDetail/${element.userId.userId}`}>
                             <FriendProfile name={element.name} profileImgUrl={element.profileImgUrl} backgroundImgUrl={element.backgroundImgUrl} stateMessage={element.stateMessage}/>
+                        </Link>
                         </>)
                     })}
                 </div>
@@ -49,7 +52,9 @@ function Home(props){
                 <div className="friends__list">
                     {friends && friends.map((element,i)=>{
                         return(<>
+                        <Link to={`/ProfileDetail/${element.userId.userId}`}>
                             <FriendProfile name={element.name} profileImgUrl={element.profileImgUrl} backgroundImgUrl={element.backgroundImgUrl} stateMessage={element.stateMessage}/>
+                            </Link>
                         </>)
                     })}
                 </div>

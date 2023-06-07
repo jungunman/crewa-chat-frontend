@@ -1,4 +1,4 @@
-
+/* 임의의 padding 값을 넣어주고싶을 때, 컴포넌트를 다른 곳에 사용하려니 padding 떄문에 안될 경우 여기 있는 값을 넣으시오. */
 /* top */
 .pd-t-5 {
     padding-top: 5px;
@@ -85,6 +85,9 @@
     padding-right: 80px;
   }
   
+  .pd-lf-rg-20{
+    padding: 0px 20px;
+  }
   
   /* left */
   .pd-lf-10{
