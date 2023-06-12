@@ -9,6 +9,7 @@
     z-index: 5;
     box-shadow: 0px 1px 1px 0px #0000001A;
     ;
+    box-sizing: border-box;
 }
 
 .header__column{

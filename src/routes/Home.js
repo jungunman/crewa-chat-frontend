@@ -39,9 +39,15 @@ function Home(props){
                 <div className="friends-bookmark__list">
                     {isOpenBookMark && favorite_friends && favorite_friends.map((element,i)=>{
                         return(<>
-                        <Link to={`/ProfileDetail/${element.userId.userId}`}>
+                        <Link key={i} to={`/ProfileDetail/${element.userId.user_id}`} state={{
+                                        name: element.name,
+                                        profileImgUrl : element.profileImgUrl,
+                                        backgroundImgUrl : element.backgroundImgUrl,
+                                        stateMessage : element.stateMessage,
+                                        userId : element.userId.user_id
+                                    }}>
                             <FriendProfile name={element.name} profileImgUrl={element.profileImgUrl} backgroundImgUrl={element.backgroundImgUrl} stateMessage={element.stateMessage}/>
-                        </Link>
+                            </Link>
                         </>)
                     })}
                 </div>
@@ -52,7 +58,13 @@ function Home(props){
                 <div className="friends__list">
                     {friends && friends.map((element,i)=>{
                         return(<>
-                        <Link to={`/ProfileDetail/${element.userId.userId}`}>
+                        <Link key={i} to={`/ProfileDetail/${element.userId.user_id}`} state={{
+                                        name: element.name,
+                                        profileImgUrl : element.profileImgUrl,
+                                        backgroundImgUrl : element.backgroundImgUrl,
+                                        stateMessage : element.stateMessage,
+                                        userId : element.userId.user_id
+                                    }}>
                             <FriendProfile name={element.name} profileImgUrl={element.profileImgUrl} backgroundImgUrl={element.backgroundImgUrl} stateMessage={element.stateMessage}/>
                             </Link>
                         </>)

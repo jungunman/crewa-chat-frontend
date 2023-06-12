@@ -23,11 +23,16 @@ const headerSelectionStatus = createSlice({
             status.headerTitle = "설정";
             status.leftIconClassName = "";
             status.rightIconClassName = "";
+        },
+        setChattingRoomTitle(status,action){
+            status.headerTitle = action.payload;
+            status.leftIconClassName = "arrow-left";
+            status.rightIconClassName = "drawer";
         }
     }
 });
 
 
 
-export let {setChatHeaderTitle,setHomeHeaderTitle,setSettingHeaderTitle} = headerSelectionStatus.actions;
+export let {setChatHeaderTitle,setHomeHeaderTitle,setSettingHeaderTitle,setChattingRoomTitle} = headerSelectionStatus.actions;
 export default headerSelectionStatus;

@@ -41,8 +41,6 @@ const friendsList = createSlice({
             state.loading = true;
         });
         builder.addCase(fetchFriendsList.fulfilled, (state,action) =>{
-            console.log(action.payload.favorite_friends);
-            console.log(action.payload.friends);
             state.favorite_friends = action.payload.favorite_friends;
             state.friends = action.payload.friends;
             state.loading = false;

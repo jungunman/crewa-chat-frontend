@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import leftArrowIcon from "./../images/arrows/arrow-type2-left.png";
 import settingIcon from "./../images/icons/settings_icon.png";
 import chatIcon from "./../images/icons/chat_icon_clicked.png";
@@ -13,6 +13,9 @@ import { useState } from "react";
 function ProfileDetail(props){
     const {userId} = useParams();
     const [isClickChange,setIsClickChange] = useState(false);
+    const infomations = useLocation().state;
+
+
     return (<>    
         <div className="main-screen pd-lf-rg-20 basic-bg-img">
             <div className="profile-detail">
@@ -27,15 +30,23 @@ function ProfileDetail(props){
                         <img className="profile-detail__img-basic" src={basicProfileImg} alt="기본 사진"/>
                         {isClickChange && <div className="profile-detail__circle"><img className="icons__camera-xs" src={cameraXs}/> </div>}
                     </div>
-                    <p className="profile-detail__name">Name{isClickChange&&<img src={pen} className="icons__pen"/>}</p>
+                    <p className="profile-detail__name">{infomations.name}{isClickChange&&<img src={pen} className="icons__pen"/>}</p>
                     <div className="profile-detail__division-line"></div>
-                    <p className="profile-detail__statusMsg">상태메세지{isClickChange&&<img src={pen} className="icons__pen"/>}</p>
+                    <p className="profile-detail__statusMsg">{infomations.stateMessage}{isClickChange&&<img src={pen} className="icons__pen"/>}</p>
                     
                     {!isClickChange && <div  className="profile-detail__contents">
+                        <Link to={`/ChattingRoom`} state={{
+                                        name: infomations.name,
+                                        profileImgUrl : infomations.profileImgUrl,
+                                        backgroundImgUrl : infomations.backgroundImgUrl,
+                                        stateMessage : infomations.stateMessage,
+                                        userId : infomations.userId.user_id
+                                    }}>
                         <div className="profile-detail__content">
                             <img src={chatIcon} className="profile-detail__content-icon" />
-                            <p className="profile-detail__content-name">나와의 채팅</p>
+                            <p className="profile-detail__content-name">채팅</p>
                         </div>
+                        </Link>
                     </div>}
                     {isClickChange && <div className="void--profile-detail__contents--61px"></div>}
                 </div>

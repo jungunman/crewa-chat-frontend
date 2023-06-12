@@ -1,10 +1,15 @@
 /* Icon의 크기 혹은 고정 url 등을 넣어두는 곳입니다. */
 
 .magnifier{
-    height: 20px;
-    width: 16px;
-    padding-right: 25px;
+    height: 19.19px;
+    width: 19.19px;
     background-image: url("./../../../images/icons/magnifier.png");
+    background-repeat: no-repeat;
+}
+.drawer{
+    height: 16px;
+    width: 19.6px;
+    background-image: url("./../../../images/icons/drawer.png");
     background-repeat: no-repeat;
 }
 
@@ -12,6 +17,13 @@
     height: 16px;
     width: 10px;
     background-image: url("./../../../images/arrows/arrow-right.png");
+    background-repeat: no-repeat;
+}
+
+.arrow-left{
+    height: 17px;
+    width: 12px;
+    background-image: url("./../../../images/arrows/arrow-left.png");
     background-repeat: no-repeat;
 }
 

@@ -66,6 +66,9 @@
   .pd-rg-20{
     padding-right: 20px;
   }
+  .pd-rg-25{
+    padding-right: 25px;
+  }
   .pd-rg-30{
     padding-right: 30px;
   }
@@ -95,6 +98,9 @@
   }
   .pd-lf-20{
     padding-left: 20px;
+  }
+  .pd-lf-25{
+    padding-left: 25px;
   }
   .pd-lf-30{
     padding-left: 30px;
