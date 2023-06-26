@@ -1,0 +1,126 @@
+
+.chattingRoom{
+    width: 100%;
+    height: 100%;
+    background-color: #F1F1F5;
+}
+
+
+.chattingRoom__footer{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 51.8px;
+    z-index: 5;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+.chattingRoom__footer .chattingRoom__column:first-child{
+    text-align: center;
+    width: 10%;
+}
+.chattingRoom__footer .chattingRoom__column:nth-child(2){
+    position: relative;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.chattingRoom__footer .chattingRoom__column:last-child{
+    text-align: center;
+    width: 10%;
+}
+
+.chattingRoom__input{
+    width: 98%;
+    height: 40px;
+    border-radius: 20px;
+    border : 1px solid #F7F7FB;
+    background-color: #EDEDED;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.chattingRoom__emoticon{
+    position: absolute;
+    right: 15px;
+    top:11px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* CSS: ChattingRoom Main Screen and Speech-Bubbles */
+
+.main-chattingRoom{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.bubble{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: left;
+}
+
+.bubble__profile-img{
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+}
+
+.speech-box{
+    margin-left: 8px;
+    box-sizing: border-box;
+}
+
+.speech-bubble{
+    padding : 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.speech-time{
+    margin-top: 3px;
+    font-size: 11px;
+    color:#999999;
+    text-align: right;
+}
+
+
+
+/* Speech-Bubble-Mine */
+
+.bubble__mine{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+}
+
+.bubble__profile-img__mine{
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+}
+
+.speech-box__mine{
+    margin-right: 8px;
+    box-sizing: border-box;
+}
+
+.speech-bubble__mine{
+    padding : 10px;
+    background-color: #0AB44F;
+    border-radius: 5px;
+    color: #fff
+}
+
+.speech-time__mine{
+    margin-top: 3px;
+    font-size: 11px;
+    color:#999999;
+    text-align: left;
+}
