@@ -4,7 +4,7 @@ import axios from "axios";
 // axios.get("http://localhost:8081/api/chat/friend/list",{params : {userId:"dd8cdbf1-c77d-49d0-b8c6-f0a04fe12c90"}})
 export const fetchFriendsList = createAsyncThunk("GET/FriendList",
                                                 async () =>{
-                                                    return axios.get("http://54.180.4.250:8081/api/chat/friend/list",{headers:{Authorization :"dd8cdbf1-c77d-49d0-b8c6-f0a04fe12c90" }})
+                                                    return axios.get("http://54.180.4.250:8090/api/chat/friend/list",{headers:{Authorization :"dd8cdbf1-c77d-49d0-b8c6-f0a04fe12c90" }})
                                                     .then(response =>response.data.data)
                                                     .catch(function (error) {
                                                         if (error.response) {
