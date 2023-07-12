@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import SockJS, { Socket } from "sockjs-client";
 import { setMessage,setChatMessages } from "../store/messageSlice";
-import { Stomp } from "@stomp/stompjs";
+import { Stomp, Client, Message } from "@stomp/stompjs";
 import { useLocation } from "react-router-dom";
 import { setChattingRoomTitle } from "../store/headerSlice";
 import Header from "./routes-components/Header";
@@ -18,28 +18,35 @@ function ChattingRooms(){
 
     const {message,chatMessages} = useSelector((state)=>state.messageStatus)
     const dispatch = useDispatch();
-    const client = useRef({});
     const infomations = useLocation().state;
-    
-    const connect = () => { // 연결할 때
-        console.log("Connection 안!!")
-        client.current = new Stomp({
-          brokerURL: 'http://54.180.4.250:8779/api/socket/ws',
-          onConnect: () => {
-            console.log("연결 직전!")
-            // subscribe(`/topic/${1}.messages`); // 연결 성공 시 구독하는 로직 실행
-            console.log("연결 성공!")
-          },
-    });
-        client.current.activate(); // 클라이언트 활성화
-      };
-      
-      const disconnect = () => { // 연결이 끊겼을 때 
-        client.current.deactivate();
-      };
+    const client = useRef({});
 
-    function sendHandler(){
-        client.current.send()
+    function connect(){
+        client.current = new Stomp.Client({
+            brokerURL: 'ws://54.180.4.250:8090/api/socket/ws',
+            connectHeaders: {
+                //헤더 값
+            },
+            debug: function (str) {
+              console.log(str);
+            },
+            reconnectDelay: 5000,
+            heartbeatIncoming: 4000,
+            heartbeatOutgoing: 4000,
+            onConnect : function (){
+                //연결되면 구독합니다.
+                //구독 함수 여기다가 넣으세요.
+            },
+            onStompError : function(){
+                console.log('Broker reported error: ' + frame.headers['message']);
+                console.log('Additional details: ' + frame.body);
+            }
+        })
+        client.current.activate();
+    }
+
+    function disconnect(){
+        client.current.deactivate();
     }
 
     useEffect(()=>{
